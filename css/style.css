@@ -1,0 +1,326 @@
+#overlay{
+
+    height:100%; width: 100%;
+    position: absolute;z-index: 4;
+    background:rgba(0,0,0,0.4);
+
+
+}
+
+
+.slides-navigation .prev,
+.slides-navigation .next{
+    height: 47px;width: 47px;
+    background-size: cover;
+    background-repeat:  no-repeat;
+
+}
+
+.slides-navigation a.prev{
+    
+    background-image: url("../img/icons/pre.png");
+    left: 20px;
+}
+.slides-navigation a.next{
+
+    background-image: url("../img/icons/nex.png");
+    right: 20px;
+}
+.titleMessage{
+    width: 100%;height:250px;
+    position: absolute;
+    z-index:6 ;top:40%;
+    text-align: center;
+
+
+}
+
+
+.titleMessage .heading h4.main{
+    color: chartreuse;
+    font-size: 40px;
+    letter-spacing: 7px;
+    font-weight: 100;
+}
+
+.titleMessage .heading p.sub{
+    color: aqua;
+    font-size: 30px;
+    letter-spacing: 7px;
+
+
+
+
+
+}
+/*about section*/
+.section{
+
+    padding: 100px 0 ;
+}
+
+
+.aboutImg{
+    max-width: 100%;
+}
+
+.sectionskill{
+
+    background: #b6101f;
+}
+.skils{
+    text-align: center;
+margin-left:10px;
+
+
+}
+.chart{
+
+    position: relative;
+    height: 152px;
+    width: 152px;
+    display: inline-block;
+
+
+
+}
+canvas{
+
+    position: absolute;
+    left:0;
+    top:0;
+}
+.percent{
+font-size: 35px;
+    color: chartreuse;
+    line-height: 152px;
+
+
+}
+.percent:after{
+    content: '%';
+}
+
+
+.squareItem{
+    position: relative;
+    margin-top: 30px;
+}
+.squareInnerContainer{
+
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 5px solid #1abc9c;
+    border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    content: '';
+    position: absolute;
+    width: 20%;top: 0;
+    border-bottom: 2px solid#1abc9c;
+
+
+}
+.squareInnerContainer:before{
+    left: 0;
+}
+.squareInnerContainer:after{
+    right: 0;
+}
+.squareIcon{
+
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: -20px;
+    font-size: 40px;
+    margin-left: -50px;
+ }
+.contactSection{
+
+    background-image: url("../img/ice6.jpg");
+
+}
+.contactButton{
+    border: 1px solid  black;
+     padding: 15px 20px;
+     display: inline-block;
+    margin-top: 20px;
+}
+.contactButton:hover{
+
+text-decoration: none;
+    background:  black;
+    color:  white;
+    border-radius: 3px;
+}
+.filter a{
+
+
+    border: 2px solid #a2210c;
+    color: #1ccacd;
+    padding: 10px 20px;
+    display: block;
+}
+.filter li{
+
+    display: inline-block;
+    padding: 5px;
+}
+
+.filter .current{
+
+    background:#a2210c ;
+    border: white;
+    color: white;
+}
+.filter{
+
+    text-align: center;
+    width: 100%;
+}
+.heading{
+
+    text-align: center;
+    width: 100%;
+    padding-bottom:2%;
+}
+.portfolioItems{
+width: 100%;
+
+
+}
+.items li{
+
+    display: inline-block;
+}
+.items li img{
+
+    width:100%;
+    -webkit-transition: all 0.2s linear,1s;
+    -moz-transition: all 0.2s linear,1s;
+    -o-transition: all 0.2s linear,1s;
+    -ms-transition: all 0.2s linear,1s;
+    -transition: all 0.2s linear,1s;
+
+}
+.items .item:hover img{
+      transform: scale(1.05,1.05);
+
+
+}
+.items .item{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.items .icons{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 90px;
+    height: 40px;
+    margin: -20px auto 0 -47px;
+
+}
+.items a{
+    color:white ;
+    background:#a2210c ;
+    height: 40px;
+    width: 40px;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    -webkit-transition: all 0.2s linear,0.4s;
+    -moz-transition: all 0.2s linear,0.4s;
+    -o-transition: all 0.2s linear,0.4s;
+    -ms-transition: all 0.2s linear,1s;
+    -transition: all 0.2s linear,0.4s;
+
+
+}
+.items .Imgoverley{
+
+    position: absolute;width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    top:0;left: 0;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s linear,1s;
+    -moz-transition: all 0.2s linear,1s;
+    -o-transition: all 0.2s linear,1s;
+    -ms-transition: all 0.2s linear,1s;
+    -transition: all 0.2s linear,1s;
+}
+.items .item:hover .Imgoverley{
+
+    opacity: 1;
+}
+.items .openButton{
+   float: left;
+    left: -200px;
+
+}
+.items .projectLink{
+   float: right;
+    right: -200px;
+
+}
+.items .item:hover .openButton{
+
+    left: 0;
+
+}
+
+.items .item:hover .projectLink{
+
+    right: 0;
+
+}
+.items{
+    padding: 0;
+}
+
+
+#navigation{
+
+    background: #b6101f;
+    color: #8618b6;
+    padding: 20px 10px;
+}
+
+#navigation li a{
+    color: white;
+
+
+}
+.navbar-brand, .navbar-brand:hover{
+
+    color: white;
+}
+.navbar-toggler-icon{
+
+    background: url("../img/icons/menu-bar.png");
+    background-size: 100%;
+    background-color: #b6101f;
+
+
+
+    
+}
+
+
+
+
+.footerSection{
+    background:#b6101f ;
+    color: white;
+    padding: 20px 10px;
+}
